@@ -1,7 +1,6 @@
 import os 
 import sys
 import time
-import crontab
 import pandas as pd
 
 # get current working directory
