@@ -15,3 +15,7 @@ nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 
 ## reading the JSON API data from healthdata.gov
 covid_data = pd.read_json('https://healthdata.gov/resource/6xf2-c3ie.json')
+
+# create a new file in the current working directory
+with open(cwd + 'C:\Users\gener\OneDrive\Documents\GitHub\crontab_' + nowStr + '.txt', 'w') as f:
+    f.write(str(covid_data))
